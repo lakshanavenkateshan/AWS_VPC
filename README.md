@@ -8,7 +8,11 @@ The design uses a **multi-tier VPC architecture** with public and private subnet
 
 ## Repository Structure
 ├── steps/ # Contains step-by-step explanation of setup
+
+
 ├── images/ # Contains architecture diagrams and output screenshots
+
+
 └── README.md
 
 ## Documentation
