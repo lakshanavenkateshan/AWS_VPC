@@ -1,19 +1,35 @@
 # AWS VPC Setup — Step-by-step
 
-This repo contains my handwritten notes and a step-by-step guide to create a VPC, subnets, NAT/IGW, route tables and EC2 connectivity.
+# Secure Internet Access for Private EC2 via Layered AWS Network Architecture
 
-## Project structure
-- `images/` — scanned notes and screenshots
-- `steps/` — step-by-step markdown files (ordered)
+## Project Overview
+This project demonstrates how to establish **secure internet access for a non-public EC2 instance** without exposing it directly to the internet.  
+The design uses a **multi-tier VPC architecture** with public and private subnets, NAT gateway for outbound access, and secure routing layers.  
 
-## Quick links
-- [Step 1 — Create VPC](steps/01-create-vpc.md)
-- [Step 2 — Create subnets](steps/02-create-subnets.md)
-- [Step 3 — Internet Gateway](steps/03-internet-gateway.md)
-- [Step 4 — NAT Gateway](steps/04-nat-gateway.md)
-- [Step 5 — Route tables](steps/05-route-tables.md)
-- [Step 6 — Security groups](steps/06-security-groups.md)
-- [Step 7 — Launch EC2 & connect](steps/07-launch-ec2.md)
+## Repository Structure
+├── steps/ # Contains step-by-step explanation of setup
+├── images/ # Contains architecture diagrams and output screenshots
+└── README.md
 
-## Notes / Credits
-Screenshots are in the `images/` folder. Feel free to open issues or PRs for improvements.
+## Documentation
+- All the detailed step-by-step implementation is documented inside the **`steps/` folder**.  
+- Screenshots and diagrams related to VPC, EC2, and private machine outputs are available in the **`images/` folder**.  
+
+## Key Components
+- **VPC** with segregated public & private subnets  
+- **NAT Gateway** for secure outbound traffic  
+- **Route Tables** for controlled communication  
+- **EC2 Instance (Private)** accessible securely without public exposure  
+
+## Outputs
+Example images of architecture and outputs are available in the `images/` folder, such as:  
+- VPC setup  
+- EC2 instance configuration  
+- Output from private machine  
+
+## ✅ Conclusion
+This project highlights how to design a **secure, layered AWS network** ensuring private resources can access the internet safely without being publicly exposed.  
+
+---
+📌 Author: *LAKSHANA V*  
+📌 Tech: **AWS, Networking, EC2, VPC, NAT Gateway**
